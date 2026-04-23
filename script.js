@@ -5,6 +5,14 @@ const tabs = document.querySelectorAll("[data-tab]");
 const menuCategories = document.querySelectorAll(".menu-category[data-panel]");
 const revealItems = document.querySelectorAll(".reveal");
 
+function showMenuCategory(target = "all") {
+  tabs.forEach((tab) => tab.classList.toggle("active", tab.dataset.tab === target));
+  menuCategories.forEach((category) => {
+    const showCategory = target === "all" || category.dataset.panel === target;
+    category.classList.toggle("is-hidden", !showCategory);
+  });
+}
+
 function updateHeader() {
   header?.classList.toggle("scrolled", window.scrollY > 50);
 }
@@ -27,29 +35,29 @@ nav?.addEventListener("click", (event) => {
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
-    const target = tab.dataset.tab;
-
-    tabs.forEach((item) => item.classList.toggle("active", item === tab));
-    menuCategories.forEach((category) => {
-      const showCategory = target === "all" || category.dataset.panel === target;
-      category.classList.toggle("is-hidden", !showCategory);
-    });
+    showMenuCategory(tab.dataset.tab);
   });
 });
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12 }
-);
+showMenuCategory(document.querySelector(".tab.active")?.dataset.tab);
 
-revealItems.forEach((item) => revealObserver.observe(item));
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  revealItems.forEach((item) => revealObserver.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add("visible"));
+}
 
 window.addEventListener("load", () => {
   if (window.lucide) {
