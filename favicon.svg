@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" role="img" aria-label="Caffeine Corner logo">
+  <rect width="1080" height="1080" fill="#ffffff" />
+  <text
+    x="540"
+    y="575"
+    fill="#000000"
+    font-family="Arial Black, Arial, Helvetica, sans-serif"
+    font-size="126"
+    font-weight="900"
+    letter-spacing="-5"
+    text-anchor="middle"
+  >CAFFEINECORNER</text>
+  <rect x="397" y="615" width="286" height="80" rx="16" fill="#000000" />
+  <text
+    x="540"
+    y="669"
+    fill="#ffffff"
+    font-family="Arial Black, Arial, Helvetica, sans-serif"
+    font-size="40"
+    font-weight="900"
+    letter-spacing="6"
+    text-anchor="middle"
+  >EST: 2019</text>
+</svg>

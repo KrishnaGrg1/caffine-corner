@@ -1,0 +1,17 @@
+{
+  "name": "Caffeine Corner Pokhara",
+  "short_name": "Caffeine Corner",
+  "description": "Specialty coffee, Nepali comfort food, Asian fusion dishes, and barista training in Pokhara.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1c0f07",
+  "theme_color": "#1c0f07",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
