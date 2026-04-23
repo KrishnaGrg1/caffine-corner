@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Caffeine Corner Pokhara | Cafe & Barista Course</title>
+    <meta
+      name="description"
+      content="Caffeine Corner Pokhara serves specialty coffee, Nepali comfort food, Asian fusion dishes, and advanced barista training."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Jost:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Caffeine Corner home">
+        <span class="brand-mark">CC</span>
+        <span>
+          <strong>Caffeine Corner</strong>
+          <small>Est. 2019 &middot; Pokhara</small>
+        </span>
+      </a>
+
+      <button class="icon-button nav-toggle" type="button" aria-label="Open menu" data-nav-toggle>
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="nav" data-nav>
+        <a href="#story">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#course">Barista Class</a>
+        <a href="#visit">Visit</a>
+        <a class="nav-cta" href="https://www.instagram.com/caffeinecorner.pkra/" target="_blank" rel="noreferrer">
+          Order via DM
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1518057111178-44a106bad636?auto=format&fit=crop&w=1800&q=80"
+          alt="Warm cafe counter with espresso machine and coffee cups"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+          <p class="hero-badge">Est. 2019 &middot; Pokhara, Nepal</p>
+          <h1>Caffeine<em>Corner</em></h1>
+          <p class="hero-sub">Quality that warmed the soul since 2019</p>
+          <p class="hero-copy">
+            A home away from home for handcrafted coffee, Nepali soul food, Asian fusion plates, and inhouse baked bread.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#menu">
+              <i data-lucide="coffee"></i>
+              Explore Menu
+            </a>
+            <a class="button secondary" href="#course">
+              <i data-lucide="graduation-cap"></i>
+              Barista Course
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee-bar" aria-label="Cafe highlights">
+        <div class="marquee-inner">
+          <span>Specialty Coffee</span><i></i>
+          <span>Nepali Soul Food</span><i></i>
+          <span>Asian Fusion</span><i></i>
+          <span>Free Delivery Over Rs. 1000</span><i></i>
+          <span>Inhouse Baked Bread</span><i></i>
+          <span>Advanced Barista Course</span><i></i>
+          <span>Specialty Coffee</span><i></i>
+          <span>Nepali Soul Food</span><i></i>
+          <span>Asian Fusion</span><i></i>
+          <span>Free Delivery Over Rs. 1000</span><i></i>
+          <span>Inhouse Baked Bread</span><i></i>
+          <span>Advanced Barista Course</span><i></i>
+        </div>
+      </section>
+
+      <section class="section about" id="story">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Our Story</p>
+          <h2>A corner made with love and coffee.</h2>
+          <p>
+            Born in the heart of Pokhara, Caffeine Corner is more than a cafe. It is a warm space where friends linger,
+            students recharge, ideas are born, and every cup feels familiar.
+          </p>
+          <div class="stat-grid">
+            <article><strong>2019</strong><span>Established</span></article>
+            <article><strong>8+</strong><span>Menu categories</span></article>
+            <article><strong>1K+</strong><span>Free delivery orders</span></article>
+            <article><strong>7</strong><span>Days a week</span></article>
+          </div>
+        </div>
+        <div class="origin-card reveal" aria-label="Caffeine Corner details">
+          <div class="origin-ring"></div>
+          <div class="origin-circle">
+            <span>Est.</span>
+            <strong>2019</strong>
+            <small>Pokhara, Nepal</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">What We Serve</p>
+            <h2>Our Menu</h2>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Menu categories">
+            <button class="tab active" type="button" data-tab="all">All</button>
+            <button class="tab" type="button" data-tab="morning">Morning</button>
+            <button class="tab" type="button" data-tab="coffee">Coffee</button>
+            <button class="tab" type="button" data-tab="sips">Sips</button>
+            <button class="tab" type="button" data-tab="busters">Busters</button>
+            <button class="tab" type="button" data-tab="nepali">Nepali</button>
+            <button class="tab" type="button" data-tab="asian">Asian</button>
+            <button class="tab" type="button" data-tab="buns">Buns</button>
+            <button class="tab" type="button" data-tab="others">Others</button>
+          </div>
+        </div>
+
+        <div class="menu-categories reveal">
+          <section class="menu-category" data-panel="morning">
+            <h3>Morning Fuel</h3>
+            <div class="menu-grid">
+              <article class="menu-card"><h4>Peanut Butter Toast</h4><p>Home baked bread with creamy peanut butter and slices of banana.</p><strong>Rs. 200</strong></article>
+              <article class="menu-card"><h4>Omelet Your Way</h4><p>Toast included. Plain / Masala / Cheese.</p><strong>Rs. 150 / 200 / 250</strong></article>
+              <article class="menu-card"><h4>Caffeine Special Breakfast</h4><p>Toast with honey, butter, savory sausage, crispy bacon, golden eggs and seasonal fruit.</p><strong>Rs. 550</strong></article>
+            </div>
+          </section>
+
+          <section class="menu-category" data-panel="coffee">
+            <h3>Coffee</h3>
+            <div class="menu-grid">
+              <article class="menu-card"><h4>Espresso</h4><strong>Rs. 160</strong></article>
+              <article class="menu-card"><h4>Affogato</h4><p>Espresso and ice cream.</p><strong>Rs. 200</strong></article>
+              <article class="menu-card"><h4>Americano</h4><strong>Rs. 170</strong></article>
+              <article class="menu-card"><h4>Milk Based Coffee</h4><strong>Rs. 200</strong></article>
+              <article class="menu-card"><h4>Spanish Latte / Mocha</h4><strong>Rs. 300</strong></article>
+              <article class="menu-card"><h4>Iced Americano</h4><strong>Rs. 200</strong></article>
+              <article class="menu-card"><h4>Iced Latte / Cappuccino</h4><strong>Rs. 230</strong></article>
+              <article class="menu-card"><h4>Iced Spanish Latte / Iced Mocha</h4><strong>Rs. 330</strong></article>
+              <article class="menu-card"><h4>Iced Strawberry Latte</h4><strong>Rs. 300</strong></article>
+            </div>
+          </section>
+
+          <section class="menu-category" data-panel="sips">
+            <h3>Sips &amp; Soothers</h3>
+            <div class="menu-grid">
+              <article class="menu-card"><h4>Black / Cutting Tea</h4><strong>Rs. 50</strong></article>
+              <article class="menu-card"><h4>Lemon Tea / Milk Tea</h4><strong>Rs. 80</strong></article>
+              <article class="menu-card"><h4>Herbal Tea</h4><strong>Rs. 200</strong></article>
+              <article class="menu-card"><h4>Ginger Honey Lemon</h4><strong>Rs. 170</strong></article>
+              <article class="menu-card"><h4>Matcha Latte</h4><strong>Rs. 300 / 330</strong></article>
+              <article class="menu-card"><h4>Seasonal Fruit Matcha</h4><strong>Rs. 350</strong></article>
+              <article class="menu-card"><h4>Soft Drinks</h4><p>Add lemon and salt.</p><strong>Rs. 100 / 130</strong></article>
+              <article class="menu-card"><h4>Iced Tea</h4><p>Peach / Lemon.</p><strong>Rs. 230</strong></article>
+              <article class="menu-card"><h4>Lemonade</h4><p>Fresh / Mint.</p><strong>Rs. 230 / 250</strong></article>
+              <article class="menu-card"><h4>Virgin Mojito</h4><strong>Rs. 300</strong></article>
+              <article class="menu-card"><h4>Milk Shake</h4><p>Ice cream / Oreo.</p><strong>Rs. 300</strong></article>
+              <article class="menu-card"><h4>Seasonal Smoothie</h4><strong>Rs. 350</strong></article>
+              <article class="menu-card"><h4>Seasonal Fruit Juice</h4><strong>Rs. 300</strong></article>
+              <article class="menu-card"><h4>Lassi</h4><p>Plain / Banana.</p><strong>Rs. 200 / 250</strong></article>
+              <article class="menu-card"><h4>Espresso Cola</h4><strong>Rs. 200</strong></article>
+            </div>
+          </section>
+
+          <section class="menu-category" data-panel="busters">
+            <h3>Menu Busters</h3>
+            <div class="menu-grid">
+              <article class="menu-card"><h4>Sadheko Chauchau</h4><strong>Rs. 200</strong></article>
+              <article class="menu-card"><h4>Corn Salad</h4><strong>Rs. 200</strong></article>
+              <article class="menu-card"><h4>Fries</h4><strong>Rs. 200</strong></article>
+              <article class="menu-card"><h4>Peri Peri Fries</h4><strong>Rs. 300</strong></article>
+              <article class="menu-card"><h4>Cheesy Fries</h4><strong>Rs. 350</strong></article>
+              <article class="menu-card"><h4>Chilly Fries</h4><strong>Rs. 300</strong></article>
+              <article class="menu-card"><h4>Full On</h4><p>Pork, chicken, sausage, cheese, egg and fries.</p><strong>Rs. 400</strong></article>
+              <article class="menu-card"><h4>Wings</h4><p>Buffalo / Gochujang / Grilled.</p><strong>Rs. 400</strong></article>
+              <article class="menu-card"><h4>Chilly</h4><p>Chicken / Sausage.</p><strong>Rs. 350</strong></article>
+              <article class="menu-card"><h4>Fruit Bowl</h4><strong>Rs. 350</strong></article>
+              <article class="menu-card"><h4>Granola Bowl</h4><strong>Rs. 380</strong></article>
+              <article class="menu-card"><h4>Muesli Bowl</h4><strong>Rs. 380</strong></article>
+            </div>
+          </section>
+
+          <section class="menu-category" data-panel="nepali">
+            <h3>Nepali Soul</h3>
+            <div class="menu-grid">
+              <article class="menu-card"><h4>Momo</h4><p>Steam / Kothey / Chilly / Jhol.</p><strong>Rs. 220 / 270 / 300 / 300</strong></article>
+              <article class="menu-card"><h4>Keema Noodle</h4><strong>Rs. 280</strong></article>
+              <article class="menu-card"><h4>Chowmein</h4><p>Egg / Chicken.</p><strong>Rs. 200 / 250</strong></article>
+              <article class="menu-card"><h4>Thukpa</h4><p>Egg / Chicken / Momo Mix.</p><strong>Rs. 200 / 250 / 400</strong></article>
+              <article class="menu-card"><h4>Dry Mix / Caffeine Style</h4><strong>Rs. 250 / 300</strong></article>
+            </div>
+          </section>
+
+          <section class="menu-category" data-panel="asian">
+            <h3>Asian Fusion</h3>
+            <div class="menu-grid">
+              <article class="menu-card"><h4>Buldak / Shin</h4><strong>Rs. 400 / 370</strong></article>
+              <article class="menu-card"><h4>Mandu Ramen</h4><p>Momo, ramen and cheese.</p><strong>Rs. 550</strong></article>
+              <article class="menu-card"><h4>Kimchi Fried Rice</h4><p>Chicken / Pork.</p><strong>Rs. 400 / 450</strong></article>
+              <article class="menu-card"><h4>Gimbap</h4><p>Egg / Chicken / Tuna.</p><strong>Rs. 400 / 450 / 450</strong></article>
+              <article class="menu-card"><h4>Bi-Bim-Bap</h4><p>Veg / Chicken / Pork.</p><strong>Rs. 450 / 500 / 550</strong></article>
+              <article class="menu-card"><h4>Teriyaki Rice</h4><strong>Rs. 450</strong></article>
+              <article class="menu-card"><h4>Katsu Curry</h4><p>Japanese curry rice.</p><strong>Rs. 550</strong></article>
+              <article class="menu-card"><h4>Nasi Goreng</h4><p>Indonesian fried rice.</p><strong>Rs. 400</strong></article>
+              <article class="menu-card"><h4>Thit Koi Tieu</h4><p>Vietnamese style pork rice.</p><strong>Rs. 400</strong></article>
+              <article class="menu-card"><h4>Samgyeopsal</h4><p>K-style BBQ.</p><strong>Rs. 1700</strong></article>
+            </div>
+          </section>
+
+          <section class="menu-category" data-panel="buns">
+            <h3>Buns &amp; Bread <span>Inhouse baked</span></h3>
+            <div class="menu-grid">
+              <article class="menu-card"><h4>Grilled Chicken Sandwich</h4><strong>Rs. 400</strong></article>
+              <article class="menu-card"><h4>Chef Special Burger</h4><p>Grilled chicken with pan fried bacon and egg.</p><strong>Rs. 550</strong></article>
+              <article class="menu-card"><h4>Cheese &amp; Egg Sandwich</h4><strong>Rs. 350</strong></article>
+              <article class="menu-card"><h4>BLT</h4><strong>Rs. 450</strong></article>
+              <article class="menu-card"><h4>Tuna Mayo Sandwich</h4><strong>Rs. 400</strong></article>
+            </div>
+          </section>
+
+          <section class="menu-category" data-panel="others">
+            <h3>Others</h3>
+            <div class="menu-grid">
+              <article class="menu-card"><h4>Normal Hookah</h4><strong>Rs. 300</strong></article>
+              <article class="menu-card"><h4>Cloud Hookah</h4><strong>Rs. 550</strong></article>
+              <article class="menu-card"><h4>Additional Chillim</h4><strong>Rs. 200 / 300</strong></article>
+              <article class="menu-card"><h4>Extra Coil</h4><strong>Rs. 50 / 100</strong></article>
+              <article class="menu-card"><h4>Black / Shikhar Ice</h4><strong>Rs. 25</strong></article>
+              <article class="menu-card"><h4>Surya</h4><p>Light / Red.</p><strong>Rs. 30</strong></article>
+              <article class="menu-card"><h4>Vanilla Ice Cream</h4><strong>Rs. 150</strong></article>
+              <article class="menu-card"><h4>H2O</h4><strong>Rs. 30</strong></article>
+              <article class="menu-card"><h4>Honey / Vanilla Syrup</h4><strong>Rs. 50</strong></article>
+            </div>
+          </section>
+
+          <section class="menu-category addon-category" data-panel="addon">
+            <h3>Add Ons</h3>
+            <div class="menu-grid">
+              <article class="menu-card"><h4>Egg</h4><strong>Rs. 50</strong></article>
+              <article class="menu-card"><h4>Cheese Slice</h4><strong>Rs. 100</strong></article>
+              <article class="menu-card"><h4>Sausage</h4><p>Ninas.</p><strong>Rs. 100</strong></article>
+              <article class="menu-card"><h4>Glutinous Rice</h4><strong>Rs. 150</strong></article>
+            </div>
+          </section>
+        </div>
+
+        <p class="menu-note reveal">Preparation time: 15-25 minutes &middot; Dine in and takeaway available.</p>
+      </section>
+
+      <section class="section course-section" id="course">
+        <div class="course-poster reveal">
+          <div class="course-art" aria-hidden="true">
+            <i data-lucide="coffee"></i>
+          </div>
+          <div class="course-copy">
+            <p class="eyebrow">Advance Barista Course</p>
+            <h2>Train with Caffeine Corner.</h2>
+            <p>
+              A practical barista class for coffee lovers and future cafe professionals, covering core knowledge from
+              origin to service.
+            </p>
+            <ul class="course-list">
+              <li>Origin &amp; processing</li>
+              <li>Roasting &amp; cupping</li>
+              <li>Brewing techniques</li>
+              <li>Advance espresso</li>
+              <li>Basic latte art</li>
+              <li>Coffee alternatives</li>
+              <li>Hospitality knowledge</li>
+            </ul>
+            <div class="course-actions">
+              <a class="button primary" href="tel:+9779825760668">
+                <i data-lucide="phone"></i>
+                9825760668
+              </a>
+              <a class="button secondary dark" href="https://www.instagram.com/caffeinecorner.pkra/" target="_blank" rel="noreferrer">
+                <i data-lucide="instagram"></i>
+                Apply on Instagram
+              </a>
+            </div>
+          </div>
+          <aside class="course-side">
+            <strong>BARISTA</strong>
+            <span>course</span>
+            <small>Ki Singh Pul, Pokhara</small>
+          </aside>
+        </div>
+      </section>
+
+      <section class="delivery-banner reveal">
+        <div>
+          <strong>Free Delivery</strong>
+          <span>On orders above Rs. 1,000 &middot; Available in Pokhara &middot; Order via Instagram DM</span>
+        </div>
+        <a href="https://www.instagram.com/caffeinecorner.pkra/" target="_blank" rel="noreferrer">Order Now</a>
+      </section>
+
+      <section class="section visit" id="visit">
+        <div class="visit-copy reveal">
+          <p class="eyebrow">Find Us</p>
+          <h2>Opening Hours</h2>
+          <div class="hours-card">
+            <div><span>Sunday - Friday</span><strong>7:00 AM - 8:00 PM</strong></div>
+            <div><span>Saturday</span><strong>8:00 AM - 8:00 PM</strong></div>
+          </div>
+        </div>
+        <div class="contact-block reveal">
+          <a href="tel:+9779825760668">
+            <span class="contact-emoji" aria-hidden="true">📞</span>
+            <span><small>Call Us</small><strong>+977 9825760668</strong></span>
+          </a>
+          <a href="https://www.instagram.com/caffeinecorner.pkra/" target="_blank" rel="noreferrer">
+            <span class="contact-emoji" aria-hidden="true">📸</span>
+            <span><small>Instagram</small><strong>@caffeinecorner.pkra</strong></span>
+          </a>
+          <a href="https://www.tiktok.com/@caffeinecorner_2019" target="_blank" rel="noreferrer">
+            <span class="contact-emoji" aria-hidden="true">🎵</span>
+            <span><small>TikTok</small><strong>@caffeinecorner_2019</strong></span>
+          </a>
+          <div>
+            <span class="contact-emoji" aria-hidden="true">📍</span>
+            <span><small>Location</small><strong>Pokhara, Nepal</strong></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>Caffeine Corner</strong>
+        <span>Home away from home &middot; Pokhara, Nepal</span>
+      </div>
+      <a href="#home">Back to top</a>
+    </footer>
+  </body>
+</html>
